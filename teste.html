@@ -65,33 +65,44 @@
             font-size: 4rem;
             word-break: keep-all;
             color: #93B1A6;
-            padding-top: 20%;
-            text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+            padding-top: 10%;
+            text-shadow: 8px -10px 6px rgba(11, 154, 135, 0.46);
+            animation: lightEffect 3s ease infinite alternate;
+            text-align: left;
             margin-left: 5%;
         }
 
-
-        .presentation h1 {
-            overflow: hidden;
-            white-space: nowrap;
-            /* Prevent text from wrapping */
-            animation: typing 3s steps(50) forwards;
-            /* Animation settings */
+        .description {
+            color: #206B6B;
+            text-align: center;
+            font-size: 2em;
         }
 
-        @keyframes typing {
-            from {
-                width: 0;
+
+        @keyframes lightEffect {
+            0% {
+                text-shadow: 0 0 10px rgba(11, 154, 135, 0.46);
+                /* Light shadow */
             }
 
-            to {
-                width: 100%;
+            100% {
+                text-shadow: 0 0 50px rgba(11, 154, 135, 0.46);
             }
         }
 
-        @media (max-width: 800px) {
+
+        @media (max-width: 896px) {
             .container-flex {
                 flex-direction: column;
+            }
+
+            .text {
+                padding-top: 0%;
+            }
+
+            .eumesmo {
+                width: 100%;
+                margin-left: 0%;
             }
         }
     </style>
@@ -113,10 +124,7 @@
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -125,6 +133,7 @@
         <div class="container-flex">
             <div class="presentation">
                 <h1 class="text">Hi, welcome to my page.</h1>
+                <p class="description">Tech Lover TCG Collector</p>
             </div>
             <div class="image-container">
                 <img src="IMG_20230416_222503-removebg-preview.png" class="eumesmo">
