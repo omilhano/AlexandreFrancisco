@@ -24,6 +24,12 @@
             height: 100vh;
         }
 
+        .section1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         .navbar-brand,
         .nav-link,
         .navbar-nav {
@@ -78,21 +84,26 @@
             font-size: 2em;
         }
 
-        .scrolldown{
-            padding-top: 150px;
+        .scrolldown {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
         }
 
         .godown {
             color: #206B6B;
             text-align: center;
             font-size: 2em;
-            margin-top: 2.5%;
+            display: inline ;
         }
 
         .arrow {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+            translate: (50%,50%);
+            display: inline-block;
         }
 
         .arrow span {
@@ -116,16 +127,16 @@
         @keyframes scroll {
             0% {
                 opacity: 0;
-                transform:rotate(45deg) translate(-20px, -20px)
+                transform: rotate(45deg) translate(-20px, -20px)
             }
 
-            50%{
+            50% {
                 opacity: 1;
             }
 
-            100%{
+            100% {
                 opacity: 0;
-                transform:rotate(45deg) translate(20px,20px);
+                transform: rotate(45deg) translate(20px, 20px);
             }
         }
 
@@ -161,9 +172,9 @@
                 padding-left: 10%;
             }
 
-            .scrolldown{
-            padding-top: 0px;
-        }
+            .scrolldown {
+                padding-top: 200px;
+            }
         }
     </style>
 </head>
