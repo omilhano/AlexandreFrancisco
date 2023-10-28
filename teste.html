@@ -59,16 +59,18 @@
         }
 
         .intro_text {
-            font-size: 4rem;
+            font-size: 3.5rem;
             word-break: keep-all;
             color: #00ADB5;
             text-align: center;
+            text-shadow: #474747 2px 5px 2px;
         }
 
         .intro_description {
             color: #00ADB5;
             text-align: center;
-            font-size: 2em;
+            font-size: 1.5em;
+            text-shadow: #474747 2px 3px 2px;
         }
 
         .scrolldown {
@@ -89,7 +91,7 @@
             margin: 0 auto;
             width: 24px;
             height: 100px;
-            margin-top: 100px;
+            margin-top: 95px;
         }
 
 
@@ -173,7 +175,6 @@
             margin: 5px auto;
             background: white;
             position: relative;
-
             height: 4px;
             width: 4px;
             border: 2px solid #fff;
@@ -185,6 +186,20 @@
             -webkit-animation: mouse-wheel 0.6s linear infinite;
             -moz-animation: mouse-wheel 0.6s linear infinite;
             animation: mouse-wheel 0.6s linear infinite;
+        }
+
+        .project_intro {
+            color: #00ADB5;
+            text-align: center;
+            font-size: 4em;
+            text-shadow: #474747 2px 3px 2px;
+            padding-top: 20px;
+            animation-range: cover 0% cover 50%;
+        }
+
+        .Projets {
+            margin-left: 10%;
+            margin-right: 10%;
         }
 
         @-webkit-keyframes mouse-wheel {
@@ -382,6 +397,49 @@
         </div>
     </section>
     <section class="section2">
+        <p class="project_intro">Projects I have participated in:</p>
+        <div class="Projets">
+            <div class="card-group">
+                <div class="card">
+                    <img src="JAP-social-share-twitter.jpg" class="card-img-top" alt="Junior Achievement Portugal">
+                    <div class="card-body">
+                        <h5 class="card-title">The Company</h5>
+                        <p class="card-text">Group project with the scope of creating a company developing an innovative
+                            product.<br>
+                            The group i created designed an innovative shower system that would allow families to
+                            substantially save on water.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">NOV 2020 - APR 2021</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="R.jfif" class="card-img-top" alt="Camping GO">
+                    <div class="card-body">
+                        <h5 class="card-title">Camping GO</h5>
+                        <p class="card-text">Group project with the scope of analyzing a
+                            stale company and providing solution regarding the implementation of an ERP capable of
+                            modernizing said company.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
