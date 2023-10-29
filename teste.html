@@ -197,9 +197,29 @@
             animation-range: cover 0% cover 50%;
         }
 
-        .Projets {
-            margin-left: 10%;
-            margin-right: 10%;
+        .card_group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 90%;
+        }
+
+        .card {
+            width: 30%;
+            margin-bottom: 20px;
+            background-color: #222831;
+            color: #00ADB5;
+            padding: 20px;
+            box-sizing: border-box;
+            border: none;
+        }
+
+        .card-footer{
+            border-top: #00ADB5;
+        }
+        .text-muted{
+            color: #00ADB5 !important;
         }
 
         @-webkit-keyframes mouse-wheel {
@@ -361,6 +381,14 @@
                 padding-left: 10%;
             }
 
+            .card_group {
+                flex-direction: column;
+            }
+
+            .card{
+                width: 100%;
+            }
+
         }
     </style>
 </head>
@@ -399,7 +427,7 @@
     <section class="section2">
         <p class="project_intro">Projects I have participated in:</p>
         <div class="Projets">
-            <div class="card-group">
+            <div class="card_group">
                 <div class="card">
                     <img src="JAP-social-share-twitter.jpg" class="card-img-top" alt="Junior Achievement Portugal">
                     <div class="card-body">
