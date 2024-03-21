@@ -4,33 +4,72 @@
 
 .first {
     height: 100dvh;
+    background-color: #DFF5FF;
 }
 
-.container-fluid {
-    margin-top: 10%;
+.container {
+    margin-top: 4%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.about-me {
+    text-align: center;
 }
 
 .name,
 .description {
-    text-align: center;
-    color: #F9F7C9;
-    margin: 0; 
+    color: #378CE7;
+    margin: 0;
+    pointer-events: none;
+    animation: fade-up 1s;
+}
+
+.name {
+    font-size: 4rem;
+}
+
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.description {
+    font-size: 1.8rem;
 }
 
 .nav-link {
-    color: #D5F0C1 !important;
+    color: #378CE7 !important;
     font-size: 1.5rem !important;
+    animation: fade-down 0.5s;
 }
 
 .nav-link:hover {
     color: black !important;
 }
 
-.btn-primary{
-    color: black !important;
-    background-color: #D5F0C1 !important;
+.btn-primary {
+    color: white !important;
+    background-color: #378CE7 !important;
     border: none !important;
+    animation: fade-up 1s ease;
 }
