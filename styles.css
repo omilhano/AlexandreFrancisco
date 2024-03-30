@@ -3,8 +3,10 @@
 }
 
 .first {
-    height: 100dvh;
-    background-color: #DFF5FF;
+    height: 100vh;
+    background-image: url(layered-waves-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .container {
@@ -30,24 +32,24 @@
 }
 
 @keyframes fade-up {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(30px) scale(0.9);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0px) scale(1);
     }
 }
 
 @keyframes fade-down {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(-30px) scale(0.9);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0px) scale(1);
     }
@@ -73,3 +75,7 @@
     border: none !important;
     animation: fade-up 1s ease;
 }
+
+/* 
+Mobile development depois de tratar da versao no computador 
+*/
