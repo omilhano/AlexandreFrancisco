@@ -21,12 +21,36 @@
 
 .name,
 .description {
-    color: #378CE7;
+    color: #378CE7 !important;
     margin: 0;
     pointer-events: none;
     animation: fade-up 1s;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
 }
 
+mark {
+    -webkit-animation: 1s highlight 1s 1 normal forwards;
+            animation: 1s highlight 1s 1 normal forwards;
+    background-color: #001220 !important;
+    color: #378CE7 !important;
+    opacity: 80%;
+    background: linear-gradient(90deg, #7efff5 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+  } 
+  
+  @-webkit-keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
+  
+  @keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
 .name {
     font-size: 4rem;
 }
@@ -54,6 +78,8 @@
         transform: translateY(0px) scale(1);
     }
 }
+
+
 
 .description {
     font-size: 1.8rem;
