@@ -29,28 +29,27 @@
     padding-bottom: 5px;
 }
 
-mark {
-    -webkit-animation: 1s highlight 1s 1 normal forwards;
-            animation: 1s highlight 1s 1 normal forwards;
-    background-color: #001220 !important;
-    color: #378CE7 !important;
-    opacity: 80%;
-    background: linear-gradient(90deg, #7efff5 50%, rgba(255, 255, 255, 0) 50%);
-    background-size: 200% 100%;
-    background-position: 100% 0;
-  } 
-  
-  @-webkit-keyframes highlight {
-    to {
-      background-position: 0 0;
+.highlight {
+    height: 100%;
+    animation-name: highlight;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    background-size: 200% 200%;
+    background-image: linear-gradient(to right, #001321 50%, transparent 0%),
+        linear-gradient(transparent 0%, purple 100%);
+}
+
+@keyframes highlight {
+    from {
+        background-position: 0;
     }
-  }
-  
-  @keyframes highlight {
+
     to {
-      background-position: 0 0;
+        background-position: -100%;
     }
-  }
+}
+
+
 .name {
     font-size: 4rem;
 }
