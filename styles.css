@@ -1,12 +1,12 @@
-* {
-    font-family: 'Montserrat', sans-serif;
+* {    
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+  
 }
 
 .first {
     height: 100vh;
-    background-image: url(layered-waves-haikei.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-color: #001220;
 }
 
 .container {
@@ -16,12 +16,16 @@
 }
 
 .about-me {
+    margin-top: 8%;
+    min-height: 225px;
     text-align: center;
+    background-color: white;
+    border-radius: 25px;
 }
 
 .name,
 .description {
-    color: #378CE7 !important;
+    color: #001220 !important;
     margin: 0;
     pointer-events: none;
     animation: fade-up 1s;
@@ -32,11 +36,12 @@
 .highlight {
     height: 100%;
     animation-name: highlight;
+    animation-delay: 1s;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     background-size: 200% 200%;
-    background-image: linear-gradient(to right, #001321 50%, transparent 0%),
-        linear-gradient(transparent 0%, purple 100%);
+    background: linear-gradient(to right, white 50%, #00a36c 5%);
+    background-size: 200% 100%;
 }
 
 @keyframes highlight {
