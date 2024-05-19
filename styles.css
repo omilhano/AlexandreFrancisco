@@ -1,31 +1,42 @@
 * {    
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-  
+    scroll-behavior: smooth;
+}
+/*go figure why this works LMAO
+it solves the whiteline at the top problem*/
+
+header{
+    padding-top: 48px;
+}
+.first {
+    height: 100dvh;
+    background-color: #001220;
+    z-index: -1;
 }
 
-.first {
-    height: 100vh;
-    background-color: #001220;
+.second{
+    background-color: #001228;
+}
+.navbar {
+    background-color: #001220; /* Set your desired background color */
 }
 
 .container {
-    margin-top: 4%;
     display: flex;
     flex-direction: column;
 }
 
-.about-me {
-    margin-top: 8%;
+.about-me, .projects {
+    margin-top: 12%;
     min-height: 225px;
     text-align: center;
-    background-color: white;
     border-radius: 25px;
 }
 
 .name,
 .description {
-    color: #001220 !important;
+    color: #378CE7 !important;
     margin: 0;
     pointer-events: none;
     animation: fade-up 1s;
@@ -40,7 +51,7 @@
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
     background-size: 200% 200%;
-    background: linear-gradient(to right, white 50%, #00a36c 5%);
+    background: linear-gradient(to right, #001220 50%, #e6f0fa 5%);
     background-size: 200% 100%;
 }
 
@@ -95,8 +106,12 @@
     animation: fade-down 0.5s;
 }
 
+.nav-link.active {
+    color: #e6f0fa !important;
+}
+
 .nav-link:hover {
-    color: black !important;
+    color: #39FF14 !important;
 }
 
 .btn-primary {
@@ -106,6 +121,13 @@
     animation: fade-up 1s ease;
 }
 
+.title{
+    color: #378CE7 !important;
+    margin: 0;
+    pointer-events: none;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
 /* 
 Mobile development depois de tratar da versao no computador 
 */
