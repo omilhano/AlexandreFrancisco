@@ -9,14 +9,17 @@ it solves the whiteline at the top problem*/
 header{
     padding-top: 48px;
 }
+
 .first {
-    height: 100dvh;
+    height: 100vh;
     background-color: #001220;
     z-index: -1;
 }
 
 .second{
+    height: 100vh;
     background-color: #001228;
+    z-index: -1;
 }
 .navbar {
     background-color: #001220; /* Set your desired background color */
@@ -27,7 +30,7 @@ header{
     flex-direction: column;
 }
 
-.about-me, .projects {
+.about-me, .projects{
     margin-top: 12%;
     min-height: 225px;
     text-align: center;
@@ -128,6 +131,16 @@ header{
     letter-spacing: 2px;
     padding-bottom: 5px;
 }
+
+@media only screen and (max-width: 680px) {
+    .name {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+  }
 /* 
 Mobile development depois de tratar da versao no computador 
 */
