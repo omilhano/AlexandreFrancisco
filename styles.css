@@ -1,12 +1,13 @@
-* {    
+* {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     scroll-behavior: smooth;
 }
+
 /*go figure why this works LMAO
 it solves the whiteline at the top problem*/
 
-header{
+header {
     padding-top: 48px;
 }
 
@@ -16,13 +17,15 @@ header{
     z-index: -1;
 }
 
-.second{
+.second {
     height: 100vh;
     background-color: #001228;
     z-index: -1;
 }
+
 .navbar {
-    background-color: #001220; /* Set your desired background color */
+    background-color: #001220;
+    /* Set your desired background color */
 }
 
 .container {
@@ -30,8 +33,9 @@ header{
     flex-direction: column;
 }
 
-.about-me, .projects{
-    margin-top: 12%;
+.about-me,
+.projects {
+    margin-top: 9%;
     min-height: 225px;
     text-align: center;
     border-radius: 25px;
@@ -124,7 +128,7 @@ header{
     animation: fade-up 1s ease;
 }
 
-.title{
+.title {
     color: #378CE7 !important;
     margin: 0;
     pointer-events: none;
@@ -140,7 +144,15 @@ header{
     .description {
         font-size: 1.2rem;
     }
-  }
+}
+
+.projects-divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
 /* 
 Mobile development depois de tratar da versao no computador 
 */
