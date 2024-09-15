@@ -21,20 +21,19 @@
       <nav class="navbar navbar-expand fixed-top">
         <div class="navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" aria-current="page" href="">Home</a>
+            <a class="nav-link" href="#projects">Projects</a>
             <a class="nav-link" href="#">Blog</a>
           </div>
         </div>
       </nav>
     </header>
     <div class="container">
-      <div class="about-me">
-        <h1 class="name">Alexandre Francisco</h1>
+      <div id="about-me">
+        <h1 id="name">Alexandre Francisco</h1>
         <p class="description">I'm an <span class="highlight">Information Systems</span> student at NOVAIMS in
           Campolide.</p>
         <p class="description"><span class="highlight">This website serves as a portfolio.</span></p>
-        <br>
         <p class="description">I was born in 2003 in Lisbon and fell in love with computers since I was little. </p>
         <p class="description">I studied economics in highschool but ended up pursuing technology as my bachelors. </p>
         <div class="icons">
@@ -57,13 +56,18 @@
   </section>
   <section class="second">
     <div class="container">
-      <div class="projects">
+      <div id="projects">
         <div class="projects-divider">
           <div class="project-item">
-            <h1 id="project-title">Driven to Decay: Byte the Dust</h1>
-            <h2 id="project-description">This program allows
-              the user to play a racer game with the goal of reaching the final level and surviving a post apocalyptic
-              world in a pixel art style. PyGame was the library used.</h2>
+            <div class="project-text">
+              <h1 id="project-title">Driven to Decay: Byte the Dust</h1>
+              <h2 id="project-description">This program allows
+                the user to play a racer game with the goal of reaching the final level and surviving a post apocalyptic
+                world in a pixel art style. PyGame was the library used.</h2>
+            </div>
+            <div class="image">
+              <img src="Screenshot 2024-09-10 223830.webp" id="project-image" loading="lazy">
+            </div>
           </div>
           <div class="project-item">World Data Bank Report</div>
           <div class="project-item">Carris Metropolitana Strikes</div>

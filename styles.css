@@ -19,13 +19,12 @@ header {
 
 .second {
     height: 100vh;
-    background-color: #001228;
+    background-color: #224167;
     z-index: -1;
 }
 
 .navbar {
-    background-color: #001220;
-    /* Set your desired background color */
+    background-color: transparent;
 }
 
 .container {
@@ -33,15 +32,15 @@ header {
     flex-direction: column;
 }
 
-.about-me,
-.projects {
+#about-me,
+#projects {
     margin-top: 9%;
     min-height: 225px;
     text-align: center;
     border-radius: 25px;
 }
 
-.name,
+#name,
 .description {
     color: #378CE7 !important;
     margin: 0;
@@ -73,8 +72,9 @@ header {
 }
 
 
-.name {
+#name {
     font-size: 4rem;
+    font-weight: 900;
 }
 
 @keyframes fade-up {
@@ -101,10 +101,9 @@ header {
     }
 }
 
-
-
 .description {
     font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .nav-link {
@@ -128,13 +127,15 @@ header {
     animation: fade-up 1s ease;
 }
 
-.title {
+/* .title
+{
     color: #378CE7 !important;
     margin: 0;
     pointer-events: none;
     letter-spacing: 2px;
     padding-bottom: 5px;
-}
+    font-weight: 900;
+} */
 
 @media only screen and (max-width: 680px) {
     .name {
@@ -144,6 +145,11 @@ header {
     .description {
         font-size: 1.2rem;
     }
+
+    #project-image {
+        width: 20%;
+        float: none;
+    }
 }
 
 .projects-divider {
@@ -151,6 +157,45 @@ header {
     flex-direction: column;
     justify-content: space-between;
 }
+
+#project-description{
+    color: #FFFFFF !important;
+    margin: 0;
+    pointer-events: none;
+    animation: fade-up 1s;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+#project-title{
+    color: #FFFFFF !important;
+    margin: 0;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+
+.project-item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-item.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#project-image {
+    margin-left: 5px;
+    float: right;
+    height: auto;
+    width: 100%;
+}
+
 
 
 /* 
