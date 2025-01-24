@@ -18,7 +18,6 @@ header {
 }
 
 .second {
-    height: 100vh;
     background-color: #224167;
     z-index: -1;
 }
@@ -113,7 +112,7 @@ header {
 }
 
 .nav-link.active {
-    color: #e6f0fa !important;
+    color: #e5e5e5 !important;
 }
 
 .nav-link:hover {
@@ -155,14 +154,15 @@ header {
 .projects-divider {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+
 }
 
 #project-description{
-    color: #FFFFFF !important;
+    color: #e5e5e5 !important;
     margin: 0;
     pointer-events: none;
-    animation: fade-up 1s;
+    text-align: left;
     letter-spacing: 2px;
     padding-bottom: 5px;
     font-size: 1.2rem;
@@ -174,20 +174,20 @@ header {
     letter-spacing: 2px;
     padding-bottom: 5px;
     font-size: 2rem;
+    text-align: left;
 }
 
 .project-item {
-    opacity: 0;
+    margin-top: 10%;
+    opacity: 1;
     transform: translateY(40px);
     transition: opacity 1s ease-out, transform 1s ease-out;
     display: flex;
     justify-content: space-around;
+    height: 90vh;
 }
 
-.project-item.in-view {
-    opacity: 1;
-    transform: translateY(0);
-}
+
 
 #project-image {
     margin-left: 5px;

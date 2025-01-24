@@ -27,16 +27,16 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', setActiveLink);
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const projectItem = document.querySelector('.project-item');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const projectItem = document.querySelector('.project-item');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('in-view');
-            }
-        });
-    }, { threshold: 0.5});
+//     const observer = new IntersectionObserver((entries) => {
+//         entries.forEach(entry => {
+//             if (entry.isIntersecting) {
+//                 entry.target.classList.add('in-view');
+//             }
+//         });
+//     }, { threshold: 0.5});
 
-    observer.observe(projectItem);
-});
+//     observer.observe(projectItem);
+// });
