@@ -126,6 +126,22 @@ header {
     animation: fade-up 1s ease;
 }
 
+.container-projects {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#project-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
 /* .title
 {
     color: #378CE7 !important;
