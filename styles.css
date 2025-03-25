@@ -148,13 +148,35 @@ header {
 }
 
 #tools {
-    color: #378CE7; 
+    color: #378CE7;
 }
 
-.project-body{
+.project-body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+
+.projectbodytext {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.projects-section {
+    height: 100vh;
+    background-color: #001220;
+    z-index: -1;
+}
+
+#textings {
+    color: #378CE7;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 25px;
+    text-align: left;
 }
 
 /* .title
@@ -177,4 +199,32 @@ header {
     .description {
         font-size: 1.2rem;
     }
-}
+
+    .project-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 70%;
+    }
+
+    #textings {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .container {
+        height: fit-content
+    }
+
+    .projects-section {
+        height: fit-content;
+    }
+
+    #powerbi-icon, #excel-icon{
+        width: 50px;
+        height: 50px;
+    }
